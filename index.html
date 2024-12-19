@@ -139,7 +139,7 @@
               </span>
               <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https://huggingface.co/datasets/THUDM/LongBench"
+                <a href="https://huggingface.co/datasets/THUDM/LongBench-v2"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <!-- <i class="far fa-images"></i> -->
@@ -185,8 +185,9 @@
           (4) <strong>Reliability</strong>: All in a multiple-choice question format for reliable evaluation.
           To elaborate, LongBench v2 consists of 503 challenging multiple-choice questions, with contexts ranging from 8k to 2M words, across six major task categories: single-document QA, multi-document QA, long in-context learning, long-dialogue history understanding, code repo understanding, and long structured data understanding.
           To ensure the breadth and the practicality, we collect data from nearly 100 highly educated individuals with diverse professional backgrounds. We employ both automated and manual review processes to maintain high quality and difficulty, resulting in human experts achieving only 53.7% accuracy under a 15-minute time constraint.
-          Our evaluation reveals that the best-performing model, when directly answers the questions, achieves only 50.1% accuracy. In contrast, the o1-preview model, which includes longer reasoning, achieves 57.7%, surpassing the human baseline by 4%. 
-          These results highlight the importance of <strong>enhanced reasoning ability and scaling inference-time compute to tackle the long-context challenges in LongBench v2</strong>.
+          Our evaluation reveals that the best-performing model, when directly answers the questions, achieves only 50.1% accuracy. In contrast, the o1-preview model, which includes longer reasoning, achieves 57.7%, surpassing the human baseline by 4%.
+          <br></br>
+          🔍 <strong>With LongBench v2, we are eager to find out how scaling inference-time compute will affect deep understanding and reasoning in long-context scenarios.</strong>
         </div>
       </div>
     </div>
@@ -216,6 +217,8 @@
 
         <h2 class="title is-3" id="leaderboard">Leaderboard</h2>
         <div class="content">
+          <p class="mt-3">📢 The leaderboard is canstantly updating as we are welcoming new submissions!
+          </p>
           <p class="mt-3">We consider two test settings: <strong>w/o CoT</strong> and <strong>w/ CoT</strong>.
           </p>
           <div class="word-count">
@@ -701,7 +704,7 @@
           
           <img src="static/images/pipeline.png" alt="grade-lv" width="70%"/>
 
-        <p style="text-align: center; margin-left: auto; margin-right: auto; width: 70%;"> 
+        <p style="text-align: center; margin-left: auto; margin-right: auto; width: 80%;"> 
           <strong>Data collection pipeline of LongBench v2</strong>. The annotator first uploads the document(s) and proposes a multiple-choice question based on the content. After that, automated and manual reviews will be conducted to ensure the data meets our requirements. Only data that passes these reviews is eligible for annotation rewards, meaning the annotator must revise the data until it passes all review stages.
         </p>
         </div>
